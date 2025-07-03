@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CanchaParaTi</title>
+
+  <!--AO SCROLL-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fuentes y estilos -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+    }
+    h1, h2, .font-poppins {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-[#0B1446] overflow-y-scroll">
+
+  <!-- Header -->
+  <header class="bg-[#28a745]">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <img src="./logo.jpg" alt="Logo" class="w-16 h-16" />
+        <span class="text-white font-bold text-lg select-none">CanchasParaTi</span>
+      </div>
+      <ul class="hidden md:flex space-x-8 text-white font-semibold text-sm">
+        <li><a href="./integrantes.html" class="hover:underline">¿Quienes somos?</a></li>
+        <li><a href="./soporte.html" class="hover:underline">Soporte</a></li>
+        <li><a href="#" class="hover:underline">Mas</a></li>
+      </ul>
+      <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-white focus:outline-none">
+        <i class="fas fa-bars fa-lg"></i>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="md:hidden hidden bg-[#28a745] px-6 pb-4 space-y-3 text-white font-semibold text-sm">
+      <li><a href="./integrantes.html" class="block hover:underline">Quienes somos</a></li>
+      <li><a href="./soporte.html" class="block hover:underline">Soporte</a></li>
+      <li><a href="#" class="block hover:underline">Mas</a></li>
+    </ul>
+  </header>
+
+  <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
+  <!-- Hero Section -->
+  <main class="relative text-center px-6 py-20 max-w-7xl mx-auto">
+    <img src="./1491.jpg" alt="Hero image" class="w-full h-auto object-cover max-h-[400px] mx-auto rounded-xl shadow-xl" />
+    <h1 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-4xl font-extrabold text-5xl leading-[1.1] px-4 font-poppins text-black drop-shadow-lg">
+      SOMOS LA MEJOR FORMA DE ENCONTRAR SINTETICA
+    </h1>
+  </main>
+  </div>
+
+
+  <div data-aos="fade-right">
+  <!-- Features Section -->
+  <section class="bg-white text-[#03094F]">
+    <div class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12 lg:gap-24">
+        <div class="lg:flex-1 max-w-lg">
+          <h1 class="text-[32px] md:text-[40px] font-extrabold leading-[1.1] mb-10 font-poppins">
+            ENCUENTRA LOS MEJORES LUGARES PARA TUS PARTIDOS
+          </h1>
+          <div class="space-y-8 text-[14px] md:text-[15px] leading-relaxed">
+            <div>
+              <h2 class="font-semibold mb-1">Manera Rapida</h2>
+              <p class="text-[#8B8FA7]">
+                Brindamos la manera mas eficiente de encontrar un lugar que se ajueste a tu prepuesto y a localizacion.
+              </p>
+            </div>
+            <div>
+              <h2 class="font-semibold mb-1">¿No soy de Jipijapa?</h2>
+              <p class="text-[#8B8FA7]">
+                No hay problema te brindramos todos  lo necesario desde: rutas, consejos de reserva, mejores formas de transportarte; precio, etc
+              </p>
+            </div>
+            <div>
+              <h2 class="font-semibold mb-1">¿No dispongo de mucho dinero?</h2>
+              <p class="text-[#8B8FA7]">
+                Nuestra variedad de opciones, puedas escoger la que mejor se adapte
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:flex-1 relative max-w-lg lg:max-w-none">
+          <img src="./portada.jpg" alt="Booking calendar" class="rounded-3xl shadow-lg" />
+          <img src="https://storage.googleapis.com/a1aa/image/fbff0b7b-82a2-4961-7571-088021142201.jpg" alt="Mobile app" class="rounded-3xl shadow-lg absolute -bottom-16 left-12 md:left-20 border-8 border-white" style="max-width: 200px;" />
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <div data-aos="fade-left">
+  <!-- Benefits Section -->
+  <section class="bg-white text-[#0B1446]">
+    <main class="max-w-7xl mx-auto px-6 py-16 md:py-24 lg:py-32">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <section class="lg:col-span-6 max-w-xl">
+          <h1 class="text-3xl sm:text-4xl font-semibold leading-tight mb-12">
+            CANCHA "LA JUNGLA"
+          </h1>
+          <div>
+            <h3 class="font-semibold text-xl mb-2">
+              Horario de Reserva: 8 AM a 5:00 PM
+            </h3>
+            <p class="text-[#7B7F9E] text-lg font-semibold mb-8 leading-relaxed">
+              Cancha alejada un poco del centro de la ciudad, cuenta con dimesiones grandes.
+            </p>
+            <ul class="space-y-6 text-lg text-[#218838] font-normal">
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-4 h-4 bg-[#218838] rounded-full flex items-center justify-center text-white text-[10px] font-bold">✓</span>
+                <p><strong>Recomiendaciones:</strong>Jugar maximo de 6 personas por equipo</p>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-4 h-4 bg-[#218838] rounded-full flex items-center justify-center text-white text-[10px] font-bold">✓</span>
+                <p><strong>Tipo:</strong> Amplia</p>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-4 h-4 bg-[#218838] rounded-full flex items-center justify-center text-white text-[10px] font-bold">✓</span>
+                <p><strong>Direccion:</strong> Ciudadela 1 de julio</p>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-4 h-4 bg-[#218838] rounded-full flex items-center justify-center text-white text-[10px] font-bold">✓</span>
+                <p><strong>Paginas oficiales:</strong><a href="https://www.instagram.com/finca_lajungla/"> Instagram</a></p>
+              </li>
+               <li class="flex items-start gap-3">
+                <span class="mt-1 w-4 h-4 bg-[#218838] rounded-full flex items-center justify-center text-white text-[15px] font-bold">✓</span>
+                <p><strong>PRECIO DE RENTA: </strong>17 dolares</p>
+              </li>
+              <li>
+              <a href="https://wa.link/bu0krf" target="_blank" rel="noopener noreferrer">
+                <button type="button"
+                  class="bg-[#28a745] hover:bg-[#218838] text-white text-4xl font-semibold py-8 px-12 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                  Reservar
+                </button>
+              </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="lg:col-span-6 flex justify-center">
+        <div class="relative rounded-xl overflow-hidden bg-[#28a745] p-4 max-w-md w-full">
+          
+          <!-- Imagen con transición -->
+          <img id="carousel-image" 
+              src="./jungla/jungla1.jpg" 
+              alt="Cancha La Jungla" 
+              class="rounded-lg mx-auto w-full h-100 object-cover transition-opacity duration-500 opacity-100" />
+
+          <!-- Botones -->
+          <button onclick="prevImage()" 
+                  class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white text-black px-2 py-1 rounded-full shadow">
+            ◀
+          </button>
+
+          <button onclick="nextImage()" 
+                  class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white text-black px-2 py-1 rounded-full shadow">
+            ▶
+          </button>
+
+        </div>
+      </section>
+      </div>
+    </main>
+  </section>
+  </div>
+
+
+  <div data-aos="fade-right">
+  <!-- 🔁 Sección duplicada: 1-->
+<section class="bg-white text-[#0B1446]">
+  <main class="max-w-7xl mx-auto px-6 py-16 md:py-24 lg:py-32">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <section class="lg:col-span-6 max-w-xl">
+        <h1 class="text-3xl sm:text-4xl font-semibold leading-tight mb-12">
+          CANCHA "DE LOS HEREDIA"
+        </h1>
+        <div>
+          <h3 class="font-semibold text-xl mb-2">
+            Horario de Reserva: 9 AM a 6:00 PM
+          </h3>
+          <p class="text-[#7B7F9E] text-lg font-semibold mb-8 leading-relaxed">
+            Ubicada en zona tranquila, ideal para partidos recreativos y torneos locales.
+          </p>
+          <ul class="space-y-6 text-lg text-[#218838] font-normal">
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-4 h-4 bg-[#218838] rounded-full flex items-center justify-center text-white text-[10px] font-bold">✓</span>
+              <p><strong>Recomendaciones:</strong> Uso con zapatos adecuados</p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-4 h-4 bg-[#218838] rounded-full flex items-center justify-center text-white text-[10px] font-bold">✓</span>
+              <p><strong>Tipo:</strong> MEDIA</p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-4 h-4 bg-[#218838] rounded-full flex items-center justify-center text-white text-[10px] font-bold">✓</span>
+              <p><strong>Dirección:</strong> Av. Los Álamos</p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-4 h-4 bg-[#218838] rounded-full flex items-center justify-center text-white text-[10px] font-bold">✓</span>
+              <p><strong>Páginas oficiales:</strong> <a href="https://instagram.com/cancha_elbosque">Instagram</a></p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-4 h-4 bg-[#218838] rounded-full flex items-center justify-center text-white text-[15px] font-bold">✓</span>
+              <p><strong>PRECIO DE RENTA:</strong> 15 dólares</p>
+            </li>
+            <li>
+              <a href="https://wa.link/bu0krf" target="_blank" rel="noopener noreferrer">
+                <button type="button"
+                  class="bg-[#28a745] hover:bg-[#218838] text-white text-4xl font-semibold py-8 px-12 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                  Reservar
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="lg:col-span-6 flex justify-center">
+        <div class="relative rounded-xl overflow-hidden bg-[#28a745] p-4 max-w-md w-full">
+          <img id="carousel-image-2"
+            src="./heredia/heredia1.jpg"
+            alt="Cancha El Bosque"
+            class="rounded-lg mx-auto w-full h-100 object-cover transition-opacity duration-500 opacity-100" />
+          <button onclick="prevImage2()"
+            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white text-black px-2 py-1 rounded-full shadow">◀</button>
+          <button onclick="nextImage2()"
+            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white text-black px-2 py-1 rounded-full shadow">▶</button>
+        </div>
+      </section>
+    </div>
+  </main>
+</section>
+</div>
+
+
+<div data-aos="fade-left">
+ <!-- 🔁 Sección duplicada: 2-->
+<section class="bg-white text-[#0B1446]">
+  <main class="max-w-7xl mx-auto px-6 py-16 md:py-24 lg:py-32">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <section class="lg:col-span-6 max-w-xl">
+        <h1 class="text-3xl sm:text-4xl font-semibold leading-tight mb-12">
+          CANCHA "LOS PITUFOS"
+        </h1>
+        <div>
+          <h3 class="font-semibold text-xl mb-2">
+            Horario de Reserva: 9 AM a 6:00 PM
+          </h3>
+          <p class="text-[#7B7F9E] text-lg font-semibold mb-8 leading-relaxed">
+            Ubicada en zona tranquila, ideal para partidos recreativos y torneos locales.
+          </p>
+          <ul class="space-y-6 text-lg text-[#218838] font-normal">
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-4 h-4 bg-[#218838] rounded-full flex items-center justify-center text-white text-[10px] font-bold">✓</span>
+              <p><strong>Recomendaciones:</strong> Uso con zapatos adecuados</p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-4 h-4 bg-[#218838] rounded-full flex items-center justify-center text-white text-[10px] font-bold">✓</span>
+              <p><strong>Tipo:</strong> MEDIA</p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-4 h-4 bg-[#218838] rounded-full flex items-center justify-center text-white text-[10px] font-bold">✓</span>
+              <p><strong>Dirección:</strong> Av. La Prensa</p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-4 h-4 bg-[#218838] rounded-full flex items-center justify-center text-white text-[10px] font-bold">✓</span>
+              <p><strong>Páginas oficiales:</strong> <a href="#">Instagram</a></p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-4 h-4 bg-[#218838] rounded-full flex items-center justify-center text-white text-[15px] font-bold">✓</span>
+              <p><strong>PRECIO DE RENTA:</strong> 15 dólares</p>
+            </li>
+            <li>
+              <a href="https://wa.link/bu0krf" target="_blank" rel="noopener noreferrer">
+                <button type="button"
+                  class="bg-[#28a745] hover:bg-[#218838] text-white text-4xl font-semibold py-8 px-12 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                  Reservar
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="lg:col-span-6 flex justify-center">
+        <div class="relative rounded-xl overflow-hidden bg-[#28a745] p-4 max-w-md w-full">
+          <img id="carousel-image-3"
+            src="./pitufos/pitufos.JPG"
+            alt="Cancha El Bosque"
+            class="rounded-lg mx-auto w-full h-100 object-cover transition-opacity duration-500 opacity-100" />
+          <button onclick="prevImage3()"
+            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white text-black px-2 py-1 rounded-full shadow">◀</button>
+          <button onclick="nextImage3()"
+            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white text-black px-2 py-1 rounded-full shadow">▶</button>
+        </div>
+      </section>
+    </div>
+  </main>
+</section>
+  </div>
+
+
+  <div data-aos="fade-right">
+<!-- 🔁 Sección duplicada: 3-->
+<section class="bg-white text-[#0B1446]">
+  <main class="max-w-7xl mx-auto px-6 py-16 md:py-24 lg:py-32">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <section class="lg:col-span-6 max-w-xl">
+        <h1 class="text-3xl sm:text-4xl font-semibold leading-tight mb-12">
+          CANCHA "BUSTAMANTE"
+        </h1>
+        <div>
+          <h3 class="font-semibold text-xl mb-2">
+            Horario de Reserva: 10:00 AM a 7:00 PM
+          </h3>
+          <p class="text-[#7B7F9E] text-lg font-semibold mb-8 leading-relaxed">
+            Ubicada un poco alejada, ideal para estudiantes que alquien cerca del terminal terreste.
+          </p>
+          <ul class="space-y-6 text-lg text-[#218838] font-normal">
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-4 h-4 bg-[#218838] rounded-full flex items-center justify-center text-white text-[10px] font-bold">✓</span>
+              <p><strong>Recomendaciones:</strong> Uso con zapatos adecuados</p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-4 h-4 bg-[#218838] rounded-full flex items-center justify-center text-white text-[10px] font-bold">✓</span>
+              <p><strong>Tipo:</strong> Pequeña</p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-4 h-4 bg-[#218838] rounded-full flex items-center justify-center text-white text-[10px] font-bold">✓</span>
+              <p><strong>Dirección:</strong> Av. Los taxista</p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-4 h-4 bg-[#218838] rounded-full flex items-center justify-center text-white text-[10px] font-bold">✓</span>
+              <p><strong>Páginas oficiales:</strong> <a href="#">Instagram</a></p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-4 h-4 bg-[#218838] rounded-full flex items-center justify-center text-white text-[15px] font-bold">✓</span>
+              <p><strong>PRECIO DE RENTA:</strong> 17 dólares</p>
+            </li>
+            <li>
+              <a href="https://wa.link/bu0krf" target="_blank" rel="noopener noreferrer">
+                <button type="button"
+                  class="bg-[#28a745] hover:bg-[#218838] text-white text-4xl font-semibold py-8 px-12 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                  Reservar
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="lg:col-span-6 flex justify-center">
+        <div class="relative rounded-xl overflow-hidden bg-[#28a745] p-4 max-w-md w-full">
+          <img id="carousel-image-4"
+            src="./bustamante/bustamante1.jpg"
+            alt="Cancha bustamante"
+            class="rounded-lg mx-auto w-full h-100 object-cover transition-opacity duration-500 opacity-100" />
+          <button onclick="prevImage4()"
+            class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white text-black px-2 py-1 rounded-full shadow">◀</button>
+          <button onclick="nextImage4()"
+            class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white text-black px-2 py-1 rounded-full shadow">▶</button>
+        </div>
+      </section>
+    </div>
+  </main>
+</section>
+  </div>
+
+</body>
+
+<!-- Script JS -->
+<script>
+const images = [
+    "./jungla/jungla1.jpg",
+    "./jungla/jungla2.jpg",
+    "./jungla/jungla3.jpg"
+  ];
+
+  let currentIndex = 0;
+  const img = document.getElementById("carousel-image");
+
+  function fadeOutIn(newIndex) {
+    img.classList.remove("opacity-100");
+    img.classList.add("opacity-0");
+
+    setTimeout(() => {
+      img.src = images[newIndex];
+      img.classList.remove("opacity-0");
+      img.classList.add("opacity-100");
+      currentIndex = newIndex;
+    }, 500); // coincide con duration-500 en tailwind
+  }
+
+  function nextImage() {
+    const newIndex = (currentIndex + 1) % images.length;
+    fadeOutIn(newIndex);
+  }
+
+  function prevImage() {
+    const newIndex = (currentIndex - 1 + images.length) % images.length;
+    fadeOutIn(newIndex);
+  }
+</script>
+
+<script>
+  const images2 = [
+    "./heredia/heredia1.jpg",
+    "./heredia/herendia2.JPG"
+  ];
+
+  let currentImageIndex2 = 0;
+
+  function showImage2(index) {
+    const img = document.getElementById("carousel-image-2");
+
+    // Oculta con transición
+    img.classList.add("opacity-0", "transition-opacity", "duration-500");
+
+    // Espera 250ms para cambiar la imagen (en medio de la animación)
+    setTimeout(() => {
+      img.src = images2[index];
+
+      // Vuelve a mostrar
+      img.classList.remove("opacity-0");
+      img.classList.add("opacity-100");
+    }, 250);
+  }
+
+  function prevImage2() {
+    currentImageIndex2 = (currentImageIndex2 - 1 + images2.length) % images2.length;
+    showImage2(currentImageIndex2);
+  }
+
+  function nextImage2() {
+    currentImageIndex2 = (currentImageIndex2 + 1) % images2.length;
+    showImage2(currentImageIndex2);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    showImage2(currentImageIndex2);
+  });
+</script>
+
+<script>
+  const images3 = [
+    "./pitufos/pitufos.JPG",
+    "./pitufos/pitufos1.JPG"
+  ];
+
+  let currentImageIndex3 = 0;
+
+  function showImage3(index) {
+    const img = document.getElementById("carousel-image-3");
+
+    // Oculta con transición
+    img.classList.add("opacity-0", "transition-opacity", "duration-500");
+
+    // Espera 250ms para cambiar la imagen (en medio de la animación)
+    setTimeout(() => {
+      img.src = images3[index];
+
+      // Vuelve a mostrar
+      img.classList.remove("opacity-0");
+      img.classList.add("opacity-100");
+    }, 250);
+  }
+
+  function prevImage3() {
+    currentImageIndex2 = (currentImageIndex2 - 1 + images3.length) % images3.length;
+    showImage3(currentImageIndex2);
+  }
+
+  function nextImage3() {
+    currentImageIndex3 = (currentImageIndex3 + 1) % images3.length;
+    showImage3(currentImageIndex3);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    showImage3(currentImageIndex3);
+  });
+</script>
+
+<script>
+  const images4 = [
+    "./bustamante/bustamante1.jpg",
+    "./bustamante/bustamante3.jpg",
+    "./bustamante/bustamante2.jpg"
+  ];
+
+  let currentImageIndex4 = 0;
+
+  function showImage4(index) {
+    const img = document.getElementById("carousel-image-4");
+
+    // Oculta con transición
+    img.classList.add("opacity-0", "transition-opacity", "duration-500");
+
+    // Espera 250ms para cambiar la imagen (en medio de la animación)
+    setTimeout(() => {
+      img.src = images4[index];
+
+      // Vuelve a mostrar
+      img.classList.remove("opacity-0");
+      img.classList.add("opacity-100");
+    }, 250);
+  }
+
+  function prevImage4() {
+    currentImageIndex4 = (currentImageIndex4 - 1 + images4.length) % images4.length;
+    showImage4(currentImageIndex4);
+  }
+
+  function nextImage4() {
+    currentImageIndex4 = (currentImageIndex4 + 1) % images4.length;
+    showImage4(currentImageIndex4);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    showImage4(currentImageIndex4);
+  });
+</script>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
+
+</html>
